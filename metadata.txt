@@ -1,47 +1,24 @@
-# This file contains metadata for your plugin.
-
-# This file should be included when you package your plugin.# Mandatory items:
-
 [general]
 name=CWSI
-qgisMinimumVersion=3.0
-description=This plugin calculates the crop water stress index (CWSI) from thermal images.
+qgisMinimumVersion=3.00
+description= CWSI is a QGIS3 plugin that helps to calculate the CWSI (crop water stress index) from thermal images.
 version=0.1
+about= CWSI plugin is a tool to calculate the CWSI (crop water stress index) from thermal images.
+
+
 author=Florian Ellsäßer
 email=el-flori@gmx.de
+category=Raster
 
-about=This plugin calculates the crop water stress index (CWSI) from thermal images and field measurements.
-
-tracker=http://bugs
-repository=http://repo
-# End of mandatory metadata
-
-# Recommended items:
-
-hasProcessingProvider=no
-# Uncomment the following line and add your changelog:
-# changelog=
-
-# Tags are comma separated with spaces allowed
-tags=python
-
-homepage=http://homepage
-category=Plugins
 icon=icon.png
-# experimental flag
-experimental=True
 
-# deprecated flag (applies to the whole plugin, not just a single version)
+; start of optional metadata
+
+experimental=True
 deprecated=False
 
-# Since QGIS 3.8, a comma separated list of plugins to be installed
-# (or upgraded) can be specified.
-# Check the documentation for more information.
-# plugin_dependencies=
+tags = Raster, plant water use, land surface temperatures, water, ecology, crop, crop water stress index, CWSI, drought, thermal image
 
-Category of the plugin: Raster, Vector, Database or Web
-# category=
-
-# If the plugin can run on QGIS Server.
-server=False
-
+homepage=https://github.com/FloEll/CWSI
+tracker=https://github.com/FloEll/CWSI/issues
+repository=https://github.com/FloEll/CWSI
