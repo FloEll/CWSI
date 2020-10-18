@@ -1,52 +1,33 @@
-# QWaterModel
-QWaterModel is a simple QGis plugin tool to calculate Evapotranspiration from thermal images.
+# CWSI plugin for QGIS 3
 
-It was designed to be very simple to use and provides only basic functionalities. 
+CWSI plugin for QGIS3
 
-# What does it do? 
-QWaterModel is a tool to run a simple energy-balance model (DATTUTDUT) to calculate evapotranspiration and fluxes from land surface temperatures. 
+This is a small description of this very simple plugin to calculate the crop water stress index (CWSI) from thermal images of land surface temperatures. 
 
-Thermal images from various sources can be used: 
+This plugin is still experimental and if you find bugs or if you have suggestions to improve this plugin please contact me!
+Running the CWSI plugin:
 
-![Functionality explained](https://github.com/FloEll/QWaterModel/blob/master/images/imageToOutput_Graph.png)
+1. minimum requirements:
+To run the CWSI plugin you'll need an image or a map with land surface temperatures e.g. of a field with crops. This image can be recorded by satellite, plane, drone or by a handheld thermal camera. If you are new to thermography: you can also simply download thermal images from various sources. The image should be a one/single band .tif image and each pixel should represent a temperature measurement. The temperatures can be recorded in Kelvin or °C since the plugin is automatically going to convert it to °C.
+You'll further have to define an output raster in a location where you want to store your output (e.g. your Desktop) and also for your output file. The output raster is automatically loaded into your QGIS project after the CWSI has been calculated. The output file contains statistics and model values.
+The CWSI calculaton is based on equation 9.6 from:
+Jones, H. G., 1992. Plants and microclimate, 2nd ed.: Cambridge University Press, Cambridge, UK.
 
-The resulting rasters contain six bands:
-1. Rn net radiation [W/m²]
-2. LE latent heat flux (from which evapotranspiration in band 6 is derived) [W/m²]
-3. H sensible heat flux [W/m²]
-4. G ground heat flux [W/m²]
-5. EF evaporative fraction [-]
-6. ET evapotranspiration [mm/m²/time period]
+2. optional input of field measurements:
+If you measured the temperature of a wet and dry surface you can also input that in the Twet and Tdry box respectively. Please use a °C format and input the temperatures as an integer e.g 23 or as a float e.g. 23.0 without a unit (°C or so). 
+If you don't have measurements of Trdy and Twet you can also use measurements of air temperature Tair. Tair is then increased by a default value of 5 °C following a workflow decribed here:
+Irmak, S. Haman, D. Z., Bastug, R. 2000. Determination of crop water stress index for 
+irrigation timing and yield estimation of corn. Agronomy Journal 92
 
-# Installation
-For installation please also install the astropy package: 
-https://docs.astropy.org/en/stable/install.html
+Press 'OK' to run the CWSI plugin. 
 
-# How to use it? 
-When QWaterModel is installed, please follow these instructions to fill the GUI:
 
-![GUI explained](https://github.com/FloEll/QWaterModel/blob/master/images/HowToUseTheGUI.png)
 
-# Background information
-I used several energy-balance models and tried to create a simple to use tool that can be used without any programming skills using a simple GUI in QGis3. 
 
-QWaterModel is based on the DATTUTDUT energy balance model from Timmermans et al. (2015). It further uses methods from Brutsaert (1982), Brenner et al. (2018), Burridge and Gadd (1975), Ellsäßer et al. (2020), Garrat (1992), Liebethal and Foken (2007), Ogée et al. (2001). See references below:
 
-Brenner, C., Zeeman, M., Bernhardt, M., Schulz, K., 2018. Estimation of evapotranspiration of temperate grassland based on high-resolution thermal and visible range imagery from unmanned aerial systems. Int. J. Remote Sens. 39, 5141–5174. https://doi.org/10.1080/01431161.2018.1471550
 
-Brutsaert, W., 1982. Evaporation into the Atmosphere. Theory, history, and applications. Springer, Dordrecht, 299. http://dx.doi.org/10.1007/978-94-017-1497-6
 
-Burridge, D.M., Gadd, A.J., 1977. The Meteorological Office operational 10-level numerical weather prediction model (December 1975), Scientific paper - Meteorological Office. British Meteorological Office, Bracknell, England.
 
-Florian Ellsäßer, Christian Stiegler, Alexander Röll, Tania June, Hendrayanto, Alexander Knohl, Dirk Hölscher 'Predicting evapotranspiration from drone-based thermography – a method comparison in a tropical oil palm plantation' submitted to Agriculture and Forest Meteorology in January 2020
-
-Garratt, J.R., 1992. The Atmospheric Boundary Layer. Cambridge University Press, Cambridge.
-
-Liebethal, C., Foken, T., 2007. Evaluation of six parameterization approaches for the ground heat flux. Theor. Appl. Climatol. 88, 43–56. https://doi.org/10.1007/s00704-005-0234-0
-
-Ogée, J., Lamaud, E., Brunet, Y., Berbigier, P., Bonnefond, J.., 2001. A long-term study of soil heat flux under a forest canopy. Agric. For. Meteorol. 106, 173–186. https://doi.org/10.1016/S0168-1923(00)00214-8
-
-Timmermans, W.J., Kustas, W.P., Andreu, A., 2015. Utility of an automated thermal-based approach for monitoring evapotranspiration. Acta Geophys. 63, 1571–1608. https://doi.org/10.1515/acgeo-2015-0016
 
 
 
