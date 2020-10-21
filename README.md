@@ -1,4 +1,4 @@
-# CWSI plugin for QGIS 3
+# ![Logo image](https://github.com/FloEll/CWSI/blob/master/icon.png) CWSI plugin for QGIS 3
 
 CWSI plugin for QGIS3
 
