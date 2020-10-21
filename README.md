@@ -1,5 +1,4 @@
 # ![Logo](https://github.com/FloEll/CWSI/blob/main/icon.png) CWSI plugin for QGIS 3
-CWSI plugin for QGIS3
 
 This is a small description of this very simple plugin to calculate the crop water stress index (CWSI) from thermal images of land surface temperatures. 
 
