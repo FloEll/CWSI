@@ -19,7 +19,7 @@ If you don't have measurements of Trdy and Twet you can also use measurements of
 Irmak, S. Haman, D. Z., Bastug, R. 2000. Determination of crop water stress index for 
 irrigation timing and yield estimation of corn. Agronomy Journal 92
 
-# 3. run the model:
+
 Press 'OK' to run the CWSI plugin. 
 
 
