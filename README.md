@@ -2,7 +2,7 @@
 
 This is a small description of this very simple plugin to calculate the crop water stress index (CWSI) from thermal images of land surface temperatures. 
 
-This plugin is still experimental and if you find bugs or if you have suggestions to improve this plugin please contact me!
+This plugin hasn't been tested with a large representative data set yet. If you find bugs or if you have suggestions  to improve this plugin please contact me!
 Running the CWSI plugin:
 
 # 1. minimum requirements:
@@ -22,7 +22,14 @@ irrigation timing and yield estimation of corn. Agronomy Journal 92
 
 Press 'OK' to run the CWSI plugin. 
 
+# How to cite the CWSI plugin? 
 
+If you are using this plugin for a scientific publication please don't forget to cite the Jones (1992) book (see full reference above) for the method that this plugin is based on. You can further cite the Irmak et al. (2000) paper (also see above).
+
+Finally, you can cite the CWSI plugin as follows: Ellsäßer, F. (2021) QGIS3 CWSI Plugin version 1.0 URL: https://plugins.qgis.org/plugins/cwsi/
+
+
+# Happy Crop Water Stress Index modelling :)
 
 
 
