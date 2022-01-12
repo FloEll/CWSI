@@ -28,7 +28,7 @@ Press 'OK' to run the CWSI plugin.
 
 If you are using this plugin for a scientific publication please don't forget to cite the Jones (1992) book (see full reference above) for the method that this plugin is based on. You can further cite the Irmak et al. (2000) paper (also see above).
 
-Finally, you can cite the CWSI plugin as follows: Ellsäßer, F. (2021) QGIS3 CWSI Plugin version 1.0 URL: https://plugins.qgis.org/plugins/cwsi/
+Finally, you can cite the CWSI plugin as follows: Ellsäßer, F. (2021) QGIS3 CWSI Plugin version 1.3 URL: https://plugins.qgis.org/plugins/cwsi/
 
 
 # Happy Crop Water Stress Index modelling :)
