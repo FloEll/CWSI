@@ -2,7 +2,9 @@
 
 This is a small description of this very simple plugin to calculate the crop water stress index (CWSI) from thermal images of land surface temperatures. 
 
-This plugin hasn't been tested with a large representative data set yet. If you find bugs or if you have suggestions  to improve this plugin please contact me!
+I createda small tutorial of how to use the CWSI plugin: https://ecothermographylab.com/crop-water-stress-index-cwsi/
+
+This plugin hasn't been tested with a large representative data set yet. If you find bugs or if you have suggestions to improve this plugin please contact me!
 Running the CWSI plugin:
 
 # 1. minimum requirements:
