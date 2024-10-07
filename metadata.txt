@@ -7,7 +7,7 @@ about= CWSI plugin is a tool to calculate the CWSI (crop water stress index) fro
 
 
 author=Florian Ellsäßer
-email=el-flori@gmx.de
+email=info@ecothermographylab.com
 category=Raster
 
 icon=icon.png
