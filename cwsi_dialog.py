@@ -9,7 +9,7 @@
         begin                : 2020-10-17
         git sha              : $Format:%H$
         copyright            : (C) 2020 by Florian Ellsäßer
-        email                : el-flori@gmx.de
+        email                : info@ecothermographylab.com
  ***************************************************************************/
 
 /***************************************************************************
